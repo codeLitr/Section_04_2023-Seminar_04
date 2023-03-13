@@ -4,7 +4,7 @@
 // 82 -> 10
 // 9012 -> 12
 
-System.Console.WriteLine("Введите число, состоящее минимум из двух цифр: ");
+System.Console.Write("Введите число, состоящее минимум из двух цифр: ");
 int digit = Convert.ToInt32(Console.ReadLine());
 if(digit < 10)
 {
@@ -21,7 +21,7 @@ for (int i = 0; i < numbers.Length; i++)
     //Console.WriteLine("[{0}]={1}", i, numbers[i]);
 }
 int summ = Summ(numbers);
-Console.WriteLine(summ);
+Console.Write($"Сумма цифр в введенном числе {digit} -> " + summ);
 
 int Summ(int[] numbers)
 {
